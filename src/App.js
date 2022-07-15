@@ -6,15 +6,14 @@ import MainScreen from "./components/MainScreen";
 import ErrorScreen from "./components/ErrorScreen";
 
 export default function App() {
-
-    return (
-        <BrowserRouter>
-            <ResetCss />
-            <GlobalCss />
-            <Routes>
-                <Route path="/" element={<MainScreen />} />
-                <Route path="*" element={<ErrorScreen />} />
-            </Routes>
-        </BrowserRouter>
-    );
+  return (
+    <BrowserRouter>
+      <ResetCss />
+      <GlobalCss />
+      <Routes>
+        <Route path="/" element={<MainScreen />} />
+        <Route path="*" element={<ErrorScreen />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
